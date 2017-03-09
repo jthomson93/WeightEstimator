@@ -9,18 +9,18 @@ import math
 # Enter your variables here
 #---------------------------
 
-b = 16.995                                          # Wing Span [Perpendicular to fuselage]
-cr = 6.074080                                       # Root Chord
-ct = 1.4955                                         # Tip Chord
+b = 17.5                                          # Wing Span [Perpendicular to fuselage]
+cr = 4.000                                       # Root Chord
+ct = 4.00                                         # Tip Chord
 bst = 0.0                                           # Structural Wingspan [Can be left 0 and calculated internally]
-c = 3.7574                                          # Average Chord
+c = 4.00                                          # Average Chord
 tc = 0.1175                                         # Thickness chord ratio
 Lh = 27.42                                          # Sweep angle of mid-chord line
 ke = 1.00                                           # Engine mounting [1.0 = Not wing mounted, 0.95 = Two wing mounted, 0.90 = Four wing mounted]
 kuc = 1.0                                           # Under-carridge location
 l12 = 27.42                                         # Sweep angle of mid chord line
 sweep = 27.1                                        # Sweep angle of leading edge
-wdes = 73315                                         # Design All-Up weight of aircraft
+wdes = 79409                                         # Design All-Up weight of aircraft
 tc_root = 0.1515                                    # Thicnkesss chord ratio at the root
 
 #---------------------------
@@ -39,10 +39,10 @@ Ww = 10.613 * (10 ** 3)
 # Referenced from similar ACF
 #------------------------------
 tr = 2.1                                            # Max thickness at root (Boeing 737 Aerofoil based on A320 chord)
-S = 61.2                                           # Projected Surface Area (A320)
-WG = 73315                                          # Gross weight
+S = 70                                           # Projected Surface Area (A320)
+WG = 79409                                          # Gross weight
 VD = 196                                            # Design dive speed Vd [From A320 POH] [FCB-FBC15 P 1/2 - 07 APR 11]
-Wzf = 120621        # POUNDS                        # Zero Fuel Weight
+Wzf = (45356 + 14250) * 2.2       # POUNDS                        # Zero Fuel Weight
 
 
 lambdahalf = math.radians(l12)
